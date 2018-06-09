@@ -1,0 +1,24 @@
+
+Paragraph Analysis
+(raw_data/paragraph_1.txt)
+---------------------------
+Approximate Word Count: 130
+Approximate Sentence Count: 5
+Average Letter Count: 6.40769230769
+Average Sentence Length: 26.0
+
+Paragraph Analysis
+(raw_data/paragraph_2.txt)
+---------------------------
+Approximate Word Count: 294
+Approximate Sentence Count: 9
+Average Letter Count: 5.08843537415
+Average Sentence Length: 31.8888888889
+
+Paragraph Analysis
+(raw_data/paragraph_2.txt)
+---------------------------
+Approximate Word Count: 294
+Approximate Sentence Count: 9
+Average Letter Count: 5.08843537414966
+Average Sentence Length: 31.88888888888889
