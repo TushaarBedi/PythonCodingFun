@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">UFO Sightings <img class="nav-ufo" src="images/ufo.svg"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>UFO Sightings</h1>
+      <p>The Truth is Out There</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filter">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <label for="date-search">Enter a Date</label>
+                      <input class="form-control" id="date-search" type="text" placeholder="1/11/2011">
+                    </li>
+                    <li class="list-group-item">
+                      <label for="city-search">Enter a City</label>
+                      <input class="form-control" id="city-search" type="text" placeholder="roswell">
+                    </li>
+                    <li class="list-group-item">
+                      <label for="state-search">Enter a State</label>
+                      <input class="form-control" id="state-search" type="text" placeholder="ca">
+                    </li>
+                    <li class="list-group-item">
+                      <label for="state-search">Select a Country</label>
+                      <select id="country-search">
+                    <option default value=" ">all</option>
+                  </select>
+                    </li>
+                    <li class="list-group-item">
+                      <label for="shape-search">Select a Shape</label>
+                      <select id="shape-search">
+                    <option default value=" ">all</option>
+                  </select>
+                    </li>
+                    <li class="list-group-item">
+                      <label for="num-results">Results Per Page</label>
+                      <select id="num-results">
+                    <option default value="100">100</option>
+                    <option value="50">50</option>
+                    <option value="25">25</option>
+                  </select>
+                    </li>
+                    <li class="list-group-item">
+                      <button id="filter-submit" class="btn btn-success">Update Search</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <h1 class="text-center loader">Loading...</h1>
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration (Minutes)</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-2 text-center pagination-container">
+          <ul class="pagination">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">UFO Sightings</span>
+    </footer>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
